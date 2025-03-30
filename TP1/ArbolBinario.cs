@@ -166,13 +166,13 @@ namespace TP1
             if (arbol == null)
                 return null;
 
-            // Crear el nuevo árbol con el mismo dato raíz del árbol dado.
+            //Creo el nuevo arbol auxiliar
             ArbolBinario<int> nuevo_arbol = new ArbolBinario<int>(arbol.getDatoRaiz());
 
-            // Verificar si el árbol dado tiene hijo izquierdo.
+			//Proceso del hijo izquierdo
             if (arbol.getHijoIzquierdo() != null)
             {
-                //Calculo el valor del nuevo hijo como la suma de la raiz actual y la raiz del hijoo izquierdo
+                //Calculo el valor del nuevo hijo como la suma de la raiz actual y la raiz del hijo izquierdo
                 int nuevo_izquierdo = arbol.getDatoRaiz() + arbol.getHijoIzquierdo().getDatoRaiz();
                 
 				//Creo el nuevo hijo izquierdo
